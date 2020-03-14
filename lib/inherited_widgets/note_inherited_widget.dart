@@ -4,17 +4,9 @@ class NoteInheritedWidget extends InheritedWidget {
 
   final notes = [
     {
-      'title': 'asdmaskldmsklasdmaskldmsklasdmaskldmsklasdmaskldmskl',
-      'text': 'asdmaskldmsklasdmaskldmsklasdmaskldmsklasdmaskldmskl'
+      'title': 'My note title',
+      'text': 'My note text'
     },
-    {
-      'title': 'sadkaskdsadkaskdsadkaskdsadkaskd',
-      'text': 'sadkasksadkasksadkasksadkasksadkasksadkask'
-    },
-    {
-      'title': 'asafas3253asafas3253asafas3253asafas3253',
-      'text': '3asafas3253asafas3253asafa3asafas3253asafas3253asafa3asafas3253asafas3253asafa'
-    }
   ];
 
   NoteInheritedWidget(Widget child) : super(child: child);

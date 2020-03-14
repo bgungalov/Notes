@@ -17,6 +17,7 @@ class NoteListState extends State<NoteList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          backgroundColor: Colors.green,
         title: Text('Notes'),
       ),
       body: FutureBuilder(
@@ -55,6 +56,7 @@ class NoteListState extends State<NoteList> {
         },
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.green,
         onPressed: () {
           Navigator.push(
               context,
@@ -80,6 +82,8 @@ class _NoteTitle extends StatelessWidget {
           fontSize: 25,
           fontWeight: FontWeight.bold
       ),
+      maxLines: 2,
+      overflow: TextOverflow.ellipsis,
     );
   }
 }
@@ -96,7 +100,7 @@ class _NoteText extends StatelessWidget {
       style: TextStyle(
           color: Colors.grey.shade600
       ),
-      maxLines: 2,
+      maxLines: 3,
       overflow: TextOverflow.ellipsis,
     );
   }
